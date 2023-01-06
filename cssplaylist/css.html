@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,98 +8,148 @@
     <link rel="stylesheet" href="style.css">
     <title>CSS</title>
 </head>
+
 <body>
     <script src="logic.js"></script>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
- 
-    <!-- Side navigation -->
-  
-<!-- <div class=" grid grid-cols-2 divide-x  h-screen"> -->
-<div class="content">
-<div class="w-80 h-full shadow-md bg-gray-400 px-1 py-10 absolute">
-    <ul class="relative">
-        <li class="relative">
-            <a href="/Videostreamstudy/home.html"
-                class=" flex items-centre text-sm py-4 px-6 h-12 overflow-hidden text-gray-800 text-ellipsis whitespace-nowrap rounded  hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out tablink active "
-                >Home</a>
-        </li>
-        <li class="relative ">
-        <a  class="flex items-centre text-sm py-4 px-6 h-12 overflow-hidden text-gray-800 text-ellipsis whitespace-nowrap rounded  hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out tablink"
-        onclick="openCourse(event,'codewithharry')">Code with harry</a>
-        </li>
-        <li class="relative ">
-        <a class="flex items-centre text-sm py-4 px-6 h-12 overflow-hidden text-gray-800 text-ellipsis whitespace-nowrap rounded  hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out tablink"
-            onclick="openCourse(event,'freecodecamp')">freecodecamp</a>
-        </li>
-        <li class="relative">
-            <p class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out tablink"
-                 data-mdb-ripple="true" data-mdb-ripple-color="dark">Sidenav link 2</p>
-        </li>
-    </ul>
-</div>
-  
+
+    <header>
+        <div class="h-20 bg-gray-900 tabcontent">
+            <h3 class="justify-center flex bg-gray-900 text-white text-2xl font-serif antialiased py-5 " id="home">CSS
+                (Cascading style
+                sheet) Tutorials </h3>
+        </div>
+    </header>
 
 
 
-  <!-- Page content -->
+    <section >
 
-<div >
- <h3 class="justify-center flex bg-gray-900 text-white text-2xl font-serif antialiased " id="home" >CSS ( Cascading style sheet) Tutorials </h3>
- <h2 class="justify-center flex text-black font-serif antialiased text-xl tabcontent"> 
-   <p> <ul>
-        <li> CSS is a stylesheet language used to control the presentation of web pages written in HTML.</li>
-        <li>It allows you to apply styles to HTML elements, such as fonts, colors, and layouts.</li>
-        <li>rules consist of selectors, which identify the elements to which the styles apply, and declarations, which specify
-        the styles to be applied.</li>
-        <li>You can write CSS in separate stylesheet files or in the HTML document itself using the style element.</li>
-        <li>CSS is an important tool for web developers and designers, as it enables them to create visually appealing websites and
-        control the layout and appearance of web pages.</li>
-    </ul> 
-</p>
-</h2>
-</div>       
- 
-<div id="codewithharry" class="tabcontent">
-<div  class="flex flex-row  justify-center">
-    <ul class="videocss">
-        <li>
-            <iframe width="400" height="250" src="https://www.youtube.com/embed/Edsxf_NBFrw "></iframe>
-            <div class="font-serif  "> CSS in one video</div> 
+        <!-- Side navigation -->
 
-        </li>
-    </ul>
+        <div class="float-left w-50 h-full shadow-md bg-gray-900 px-1 py-10 absolute">
+            <nav>
+                <ul class="relative">
+                    <li class="relative ">
+                        <a href="/home.html"
+                            class="flex items-centre text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded  hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out tablink active ">Home</a>
+                    </li>
 
-    <ul class="videocss">
-        <li>
-            <iframe width="400" height="250" src="https://www.youtube.com/embed/Edsxf_NBFrw "></iframe>
-            <div class="font-mono "> CSS in one video<video src=""></video></div>
-        </li>
-    </ul>
-</div>
-</div>
-<div id="freecodecamp" class="tabcontent">
-    <div class="flex flex-row justify-center">
-        <ul class="videocss">
-            <li>
-                <iframe width="400" height="250" src="https://www.youtube.com/embed/OXGznpKZ_sA  "></iframe>
+                    <li class="relative">
+                        <a href=""
+                            class=" flex items-centre text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded  hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out tablink  ">Back</a>
+                    </li>
+                    <li class="relative">
+                        <a
+                            class=" flex items-centre text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded  hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out tablink  ">Channel</a>
+                    </li>
+                    <li class="relative ">
+                        <a class="flex items-centre text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded  hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out tablink"
+                            onclick="openCourse(event,'codewithharry')">Code with harry</a>
+                    </li>
 
-            </li>
-        </ul>
+                    <li class="relative ">
+                        <a class="flex items-centre text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded  hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out tablink"
+                            onclick="openCourse(event,'freecodecamp')">freecodecamp</a>
+                    </li>
+                    <li class="relative">
+                        <p class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out tablink"
+                            data-mdb-ripple="true" data-mdb-ripple-color="dark">Sidenav link 2</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
-        <ul class="videocss">
-            <li>
-                <iframe width="400" height="250" src="https://www.youtube.com/embed/OXGznpKZ_sA "></iframe>
-            </li>
-        </ul>
-    </div>
-</div>
 
-</div>
-<script>
-   
-   
 
-</script>
+    </section>
+        <!-- Page content -->
+
+    
+    <section class="bg-gray-400">
+        <div class=" float-right h-auto w-5/6  px-5 bg-gray-400 tabcontent">
+
+            <div class=" font-serif antialiased text-xl">
+                <ol class="list-disc">
+                    <li> CSS is a stylesheet language used to control the presentation of web pages written in HTML.
+                    </li>
+                    <li>It allows you to apply styles to HTML elements, such as fonts, colors, and layouts.</li>
+                    <li>rules consist of selectors, which identify the elements to which the styles apply, and
+                        declarations, which specify
+                        the styles to be applied.</li>
+                    <li>You can write CSS in separate stylesheet files or in the HTML document itself using the style
+                        element.</li>
+                    <li>CSS is an important tool for web developers and designers, as it enables them to create visually
+                        appealing websites and
+                        control the layout and appearance of web pages.</li>
+                        <li> CSS is a stylesheet language used to control the presentation of web pages written in HTML.
+                        </li>
+                        <li>It allows you to apply styles to HTML elements, such as fonts, colors, and layouts.</li>
+                        <li>rules consist of selectors, which identify the elements to which the styles apply, and
+                            declarations, which specify
+                            the styles to be applied.</li>
+                        <li>You can write CSS in separate stylesheet files or in the HTML document itself using the style
+                            element.</li>
+                        <li>CSS is an important tool for web developers and designers, as it enables them to create visually
+                            appealing websites and
+                            control the layout and appearance of web pages.</li>
+                </ol>
+            </div>
+        </div>
+    
+    </section>
+    <section class="bg-gray-400 ">
+
+        <div id="codewithharry" class="tabcontent  bg-gray-400 invisible">
+            <h3 class="justify-center flex bg-gray-900 text-white text-2xl font-serif antialiased py-5 ">Code
+                with Harry </h3>
+            <div class="flex flex-row  justify-center">
+                <ul class="videocss mx-2">
+                    <li>
+                        <iframe width="400" height="250" allowfullscreen="true" src="https://www.youtube.com/embed/Edsxf_NBFrw "></iframe>
+                        <div class="font-serif  "> CSS in one video</div>
+
+                    </li>
+                </ul>
+
+                <ul class="videocss mx-2">
+                    <li>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/Edsxf_NBFrw "></iframe>
+                        <div class="font-serif "> CSS in one video</div>
+                    </li>
+                </ul>
+
+            </div>
+            <p class="mx justify-center"> Above tutorial will help you in learning CSS in one video</p>
+        </div>
+ </section>
+        <section class="bg-gray-400">
+
+        <div id="freecodecamp" class="tabcontent  bg-gray-400 invisible">
+            <h3 class="justify-center flex bg-gray-900 text-white text-2xl font-serif antialiased py-5 " id="home">
+                Freecodecamp
+            </h3>
+            <div class="flex flex-row justify-center">
+                <ul class="videocss">
+                    <li>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/OXGznpKZ_sA  "></iframe>
+
+                    </li>
+                </ul>
+
+                <ul class="videocss">
+                    <li>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/OXGznpKZ_sA "></iframe>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-400">
+        <p> Devleoped by @AnkitPandey</p>
+    </footer>
 
 </body>
+
 </html>

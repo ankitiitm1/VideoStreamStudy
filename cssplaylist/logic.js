@@ -6,6 +6,8 @@ function openCourse(evt, courseName) {
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
+        tabcontent[i].className = tabcontent[i].className.replace("invisible", "");
+
     }
 
     // Get all elements with class="tablinks" and remove the class "active"
@@ -16,5 +18,6 @@ function openCourse(evt, courseName) {
 
     // // Show the current tab, and add an "active" class to the link that opened the tab
     document.getElementById(courseName).style.display = "block";
-    // evt.currentTarget.className += " active";
+
+    evt.currentTarget.className += "active";
 }
