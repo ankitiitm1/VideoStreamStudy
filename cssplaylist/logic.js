@@ -9,7 +9,7 @@ function openCourse(evt, courseName) {
         tabcontent[i].className = tabcontent[i].className.replace("invisible", "");
 
     }
-
+   
     // Get all elements with class="tablinks" and remove the class "active"
     tablink = document.getElementsByClassName("tablink");
     for (i = 0; i < tablink.length; i++) {
@@ -20,4 +20,6 @@ function openCourse(evt, courseName) {
     document.getElementById(courseName).style.display = "block";
 
     evt.currentTarget.className += "active";
+    document.getElementById("home").innerHTML = courseName;
+
 }
